@@ -5,6 +5,20 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-05-19
+
+### Added
+
+- **Infrastructure Layer Conception** (Necessary principle) — Infrastructure Layer is now a formally defined layer: the bottommost level whose slices represent integration targets (external systems, technologies) rather than business entities. Standard SDS nesting rules apply inside it.
+- **Infrastructure Layer** term added to Glossary with a precise definition.
+- **Special Layers** section in Structure — table describing the two reserved layer roles (Shared and Infrastructure) with their position, slice naming rule, and internal structure rule.
+- Infrastructure Layer shown explicitly in all three Generic Examples.
+- Infrastructure Layer compliance criteria added to COMPLIANCE.md.
+
+### Changed
+
+- Layer hierarchy in all examples updated to include Infrastructure as the bottommost layer.
+
 ## [1.0.0] - 2025-03-11
 
 ### Added
