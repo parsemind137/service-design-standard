@@ -5,6 +5,25 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-08-13
+
+### Added
+
+- **Access Contour Principle** (Necessary principle) — when a Layer serves multiple distinct caller types, its Slices must be grouped into named Contour sub-folders. No imports between Contours within the same Layer. Layers below the Contour split remain unified across all Contours — logic common to all caller types is not duplicated.
+- **Access Contour** term added to Glossary.
+- **Generic Example (with Access Contour)** added to illustrate Contour separation.
+- Access Contour compliance criteria added to COMPLIANCE.md.
+
+### Changed
+
+- **Access Contour** (Glossary) — definition updated: removed "specialization of Slices Groups" framing (misleading because Contours are more restrictive than Slices Groups); now explicitly states that Contours are fully isolated with no imports between them.
+- **No Cross-Slice Shared Code** — reworded to resolve contradiction with Shared Code Conception: shared code between Slices must occupy the designated bottommost Slice of that Layer or the Shared Layer; an arbitrary Slice may not serve as a shared code source for peer Slices.
+- **Cross-Entity Operations Contract** — reworded: removed "via parameters" (was a reference to the removed Pseudo Clean concept); principle now focuses on introducing a dedicated Slice for the combined operation.
+
+### Removed
+
+- **Pseudo Clean** concept removed from Glossary and from the Shared Code Conception principle.
+
 ## [1.1.0] - 2026-05-19
 
 ### Added
