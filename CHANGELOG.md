@@ -5,6 +5,20 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-11-20
+
+### Added
+
+- **Hierarchical Decomposition Principle** (Necessary principle) — any large module is split recursively by purpose and responsibility until every element is simple, self-contained and understandable: module → functional areas → sub-functions → atomic operations. The mandatory levels are the fixed decomposition steps, Groups are an intermediate step, and inside a Segment decomposition continues in free form. Beyond the mandatory levels, a simple element is not split further.
+- **Hierarchical Decomposition** term added to Glossary.
+- **Decomposition Steps** table added to Structure — what each level is split into and by what.
+- Hierarchical Decomposition compliance criteria added to COMPLIANCE.md.
+
+### Changed
+
+- **Service / Module Structure Principle** — now also adheres to Hierarchical Decomposition.
+- **Free-form Inside Segment** — clarified that decomposition by responsibility continues inside a Segment.
+
 ## [1.2.0] - 2026-08-13
 
 ### Added
